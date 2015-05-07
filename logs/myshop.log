@@ -1,0 +1,1 @@
+2014-12-30 10:59:01,884 [main] WARN  [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - Could not load properties from URL [file:/var/myshop/application.server.properties]: \var\myshop\application.server.properties (系统找不到指定的路径。)

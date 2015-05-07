@@ -1,0 +1,963 @@
+@import url("ele_css/ele_chosenB.css");
+/*@import url("ele_css/ele_crumb_v2.css");
+@import url("ele_css/ele_popWin.css");*/
+
+.mainPanel:before,
+.mainPanel:after{
+	content:".";
+	visibility:hidden;
+	height:0;
+	line-height:0;
+	font-size:0;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	display:block;
+}
+.mainPanel {
+	background-color:#fff;
+	zoom:1;
+}
+
+h1,
+.issam .green,
+.issam .blue,
+.issam .orange,
+.issam .gray,
+.formInput .inputText,
+.formInput .inputText span,
+.btnPanel .btn_Submit,
+.formInput .over .inputText,
+.passwordStrength b,
+.regBox2 h3,
+.regBox2 h4,
+.regBox2 h4 .expand,
+.regBox2 h4 .close,
+.regBox3 h3,
+.regBox3 h4,
+.regBox3 h4 .expand,
+.regBox3 h4 .close{
+	background:url(../img/base/bg_reg1.png) no-repeat;
+}
+h1{
+	padding:0 68px;
+	height:78px;
+	background-repeat:repeat-x;
+	background-position: 0 -345px;
+	line-height:78px;
+	font-size:28px;
+	font-family:"microsoft yahei";
+	font-weight:normal;
+	color:#08397b;
+	border-bottom:1px solid #e4e4e4;
+}
+h1 strong{
+	color:#528a29;
+	font-weight:normal;
+	padding-left:8px;
+}
+.mainPanel .title{
+	color:#333333;
+	font-size:16px;
+	font-weight:bold;
+	height:30px;
+}
+.issam .green,.issam .blue,.issam .orange,.issam .gray{
+	background-repeat:no-repeat;
+	display:inline-block;
+	width:214px;
+	height:49px;
+	color:#fff;
+	font-weight:bold;
+	font-size:14px;
+	padding:28px 0 0 0;
+	cursor:pointer;
+	text-align:center;
+}
+.issam{
+	height:135px;
+}
+
+.issam input{
+	margin:32px 4px;
+	height:12px;
+	width:12px;
+	display:block;
+	float:left;
+}
+.issam .green{
+	background-position:0 0;	
+}
+.issam .blue{
+	background-position:0 -77px;	
+}
+.issam .orange{
+	background-position:0 -633px;	
+}
+.issam .gray{
+	background-position:0 -154px;	
+}
+.issam li{
+	height:135px;
+	float:left;
+	width:364px;
+}
+.issam li .msg{
+	padding:10px 0 0 35px;
+	line-height:20px;
+	display:none;
+}
+.issam .rl{
+	width:500px;	
+}
+.regBox1{
+	padding:0 30px;	
+}
+.regBox1 h3{
+	position:relative;
+	font-size:14px;
+	height:34px;
+	line-height:34px;
+	border-bottom:2px #73b843 solid;
+}
+.regBox1 h3 s{
+	display:block;
+	height:2px;
+	width:284px;
+	overflow:hidden;
+	position:absolute;
+	bottom:-2px;
+	background:#2886ce;
+	left:50%;
+	margin-left:-142px;
+}
+.regBox1 .boxbody{
+	padding-top:35px;
+}
+.formInput li{
+	height:68px;
+}
+.formInput li div,
+.formInput li label,
+.formInput li span{
+	display:block;
+	float:left;	
+}
+.formInput li label{
+	width:100px;
+	padding-top:5px;
+	text-align:right;
+}
+.formInput li label span{
+	padding-top:0;
+	display:inline;
+	float:none;
+}
+.formInput li p{
+	clear:both;
+	float:none;
+	padding-left:100px;
+	color:#979797;
+}
+.formInput li input{
+	width:242px;
+	border:0;
+	background:none;
+	padding:0;
+}
+.formInput .inputText{
+	width:244px;
+	height:31px;
+	background-position:left -483px;
+	margin-right:10px;
+	padding-left:7px;
+}
+.formInput .inputSelect{
+	margin-right:10px;	
+}
+.formInput .radioselB input,
+.formInput .radioselC input,
+.formInput .radiosel input{
+	display: block;
+    float: left;
+    height: 12px;
+    margin: 3px;
+    width: 12px;
+}
+.formInput .radioselB label,
+.formInput .radiosel label,
+.formInput .radioselC label{
+    display: inline-block;
+	text-align:left !important;
+	padding:0 !important;
+    width: 160px;
+	margin-right:100px;
+}
+.formInput .radioselB{
+	float:left;
+	width:660px;
+	padding-left:100px;
+	height:30px;
+	padding-top:5px;
+}
+.formInput .radioselB label,
+.formInput .radioselC label{
+	width:auto !important;	
+}
+.formInput .radioselC{
+	float:left;
+	width:660px;
+	padding-left:10px;
+	height:30px;
+	padding-top:5px;
+}
+
+.formInput span{
+	padding-top:5px;
+	
+}
+.formInput .inputText span{
+	width:249px;
+	height:25px;
+	background-position:right -514px;
+	padding:6px 0 0 0;
+	overflow:hidden;
+	zoom:1;
+}
+.formInput .tips,.Validform_wrong{
+	background:url(../img/base/sprite_icon.png) 0 -1298px no-repeat;
+	padding-left:22px;
+	height:20px;
+	color:#D70200;
+	margin-left:0;
+}
+.formInput .msg{
+	color:#979797;	
+}
+.formInput .chkimg img{
+	display:block;
+	float:left;	
+}
+.formInput .chkimg{
+	padding:0;
+	margin-right:10px;	
+}
+.formInput .pwdPanel{
+	color:#979797;
+}
+.formInput .last{
+	height:45px;	
+}
+.formInput .chkbox{
+	float:left;
+	width:25px !important;
+	padding:0;
+	/*height:12px;*/
+	margin-top:8px;
+	margin-top:7px\0;
+	*margin-top:3px;
+	_margin-top:5px;
+}
+:root .formInput .chkbox{
+	margin-top:8px\0;
+}
+.formInput ul{
+	padding:0 0 0 90px;	
+}
+.btnPanel{
+	text-align:center;
+	padding-top:20px;	
+	border-top:1px dashed #cbcab8;
+}
+.btnPanel .btn_Submit{
+	background-position:0 -232px;
+	display:inline-block;
+	zoom:1;
+	height:39px;
+	width:109px;
+	text-indent:-20000px;
+	cursor:pointer;
+	vertical-align:middle;
+}
+.btnPanel .loading{background:url(../img/base/onload.gif) no-repeat 15px center #fff; text-indent:35px; line-height:39px; color:#777!important; border:1px solid #aaa; border-radius:3px; cursor:default; -moz-border-radius:3px; -webkit-border-radius:3px; overflow:hidden;}
+.btnPanel .loading:hover{text-decoration:none!important;}
+.formInput .over .inputText{
+	background-position:left -545px;
+}
+
+.formInput .over .inputText span{	
+	background-position:right -576px;
+}
+.formInput .over label{
+	font-weight:bold;	
+}
+.formInput .lblText{
+	width:auto !important;	
+}
+
+.passwordStrength{
+	display:block !important;
+	width:98px !important;
+	height:	10px !important;	
+	padding:0 !important;
+	margin:5px 5px;
+	_margin-left:0;
+	_padding-left:5px;
+	overflow:hidden;
+	position:relative;
+}
+.passwordStrength b{
+	display:block;
+	width:98px;
+	height:	10px;
+	position:absolute;
+	background-position:0 -611px;
+	margin:0;
+}
+.passwordStrength i{
+	display:block;
+	width:0;
+	height:	10px;	
+	background:#246dba;
+}
+.pwdPower_l1 i{
+	width:20px	!important;
+}
+.pwdPower_l2 i{
+	width:46px	!important;
+}
+.pwdPower_l3 i{
+	width:72px	!important;
+}
+.pwdPower_l4 i{
+	width:98px	!important;
+}
+
+/* register Step 2*/
+.mainPanelB{
+	padding:20px 38px 30px;
+	background:#fff;
+}
+.mainPanelB .title{
+	padding-left:30px;	
+}
+.mainPanelB .issam{
+	padding-left:30px;		
+}
+.inputw100,.inputw100 span{
+	width:100px !important;	
+}
+.inputw100 input{
+	width:93px !important;	
+}
+.inputw80,.inputw80 span{
+	width:80px !important;	
+}
+.inputw80 input{
+	width:74px !important;	
+}
+.regBox2 .formInput li{
+	height:	46px;
+}
+.regBox2 .formInput .last{
+	height: 26px;	
+}
+.regBox2 .formInput ul{
+	padding:0 50px;	
+}
+.regBox2 .formInput label{
+	width:100px;
+	text-align:right;
+	line-height:18px;
+	_line-height:16px;
+}
+.regBox2 .formInput .must{
+	display:inline-block;
+	zoom:1;	
+	height:11px;
+	padding:0 5px 0 0;
+	overflow:hidden;	
+}
+.regBox2{
+	border:1px #2ba1df solid;
+	position:relative;
+	padding-top:52px;
+	margin-top:30px;
+	zoom:1;
+}
+.regBox2 h3{
+	display:block;
+	position:absolute;
+	height:60px;
+	width:160px;
+	background-position:0 -423px;
+	background-repeat:repeat-x;
+	top:-8px;
+	left:45px;
+	text-indent:-20000px;
+	overflow:hidden;
+}
+.regBox2 h5{
+	padding-left:85px;
+	font-size:12px;
+	margin:15px 0;
+}
+.regBox2 .inputListB li{
+	height:65px;
+	clear:both;
+	float:none;
+	zoom:1;
+}
+/*.regBox2 .inputListB .fuInfo{
+	height:35px;
+}*/
+.regBox2 .inputListB .fuInfoSel{
+	height:45px;	
+}
+.expandPanel{
+	zoom:1;
+	position:relative;
+}
+.ispersonal{
+	padding-left:85px;	
+}
+.ispersonal li{
+	float:left;
+	width:342px;
+}
+.ispersonal .rl{
+	width:484px;
+}
+.ispersonal label{
+	width:60px;
+	display:inline-block;
+	zoom:1;
+}
+.ispersonal input{
+	width:12px;
+	height:12px;
+	margin:3px;
+	margin-top:0px\9;
+	*margin-top:2px;
+	_margin-top:4px;
+	float:left;
+	display:block;
+}
+.ispersonal p,.ispersonal ol{
+	padding-left:35px;
+	
+}
+.ispersonal ol li{
+	height:20px;
+	width:auto;	
+	float:none;	
+}
+.regBox2 h4{
+	height:25px;
+	margin:15px 115px 15px 0;
+	background-position:0 -277px;
+	background-repeat:repeat-x;
+	border:1px #98c900 solid;
+	border-left:0;
+	padding-left:20px;
+	line-height:24px;
+	position:relative;
+}
+.regBox2 p{
+	padding:0 80px 0 35px;	
+}
+.regBox2 h4 .expand,
+.regBox2 h4 .close{
+	display:block;
+	background-position:no-repeat;
+	background-position:-134px -231px;
+	width:25px;
+	height:25px;
+	overflow:hidden;
+	text-indent:-2000px;
+	top:0;
+	right:0;
+	position:absolute;
+}
+.regBox2 h4 .close{
+	background-position:-109px -231px;	
+}
+.regBox2 h4 .exmsg{
+	 color: #666;
+	 font-size:12px;
+	 font-weight:normal;
+	 margin-left:10px;
+	 cursor:pointer;
+}
+.regBox2 .btnPanel{
+	margin-top:20px;
+	padding-bottom:25px;
+}
+.ie6 .inputSelect_companytype .chzn-results{
+	height:190px;
+}
+
+.regBox3 .formInput li{
+	height:	46px;
+}
+.regBox3 .formInput .last{
+	height: 26px;	
+}
+.regBox3 .formInput ul{
+	padding:0 50px;	
+}
+.regBox3 .formInput label{
+	width:115px;
+	text-align:right;
+	line-height:18px;
+	_line-height:16px;
+}
+.regBox3 .formInput .must{
+	display:inline-block;
+	zoom:1;	
+	height:11px;
+	padding:0 5px 0 0;
+	overflow:hidden;	
+}
+.regBox3{
+	border:1px #2ba1df solid;
+	position:relative;
+	padding-top:52px;
+	margin-top:10px;
+	zoom:1;
+}
+.regBox3 h3{
+	display:block;
+	position:absolute;
+	height:60px;
+	width:263px;
+	background-position:0 -423px;
+	background-repeat:repeat-x;
+	top:-8px;
+	left:45px;
+	text-indent:-20000px;
+	overflow:hidden;
+	background:url(../img/base/reg_temp_member.png) 0 0 no-repeat;
+}
+.regBox3 h5{
+	padding-left:85px;
+	font-size:12px;
+	margin:15px 0;
+}
+.regBox3 .inputListB li{
+	height:65px;
+	clear:both;
+	float:none;
+	zoom:1;
+}
+.regBox3 .inputListB .fuInfoSel{
+	height:45px;	
+}
+.regBox3 h4{
+	height:25px;
+	margin:15px 115px 15px 0;
+	background-position:0 -277px;
+	background-repeat:repeat-x;
+	border:1px #98c900 solid;
+	border-left:0;
+	padding-left:20px;
+	line-height:24px;
+	position:relative;
+}
+.regBox3 p{
+	padding:0 80px 0 35px;	
+}
+.regBox3 .formInput li p {
+	padding-left:115px;
+}
+.regBox3 h4 .expand,
+.regBox3 h4 .close{
+	display:block;
+	background-position:no-repeat;
+	background-position:-134px -231px;
+	width:25px;
+	height:25px;
+	overflow:hidden;
+	text-indent:-2000px;
+	top:0;
+	right:0;
+	position:absolute;
+}
+.regBox3 h4 .close{
+	background-position:-109px -231px;	
+}
+.regBox3 h4 .exmsg{
+	 color: #666;
+	 font-size:12px;
+	 font-weight:normal;
+	 margin-left:10px;
+	 cursor:pointer;
+}
+.regBox3 .btnPanel{
+	margin-top:20px;
+	padding-bottom:25px;
+}
+.regBox3 .lireset {
+	padding:20px 0 20px 85px;
+}
+.regBox3 .lireset li {
+	padding-bottom:10px;
+}
+.regBox3 .btn_agreen,
+.regBox3 .btn_agray {
+	float:left;
+	position: static;
+	margin-top:5px;
+	margin-right:10px;
+}
+.regBox3 .btn_agreen span,
+.regBox3 .btn_agray span{
+	background-image:url(../img/base/bg_ahelpinfo_B.png);
+	padding-top:0;
+}
+.regBox3 .btn_agray{
+	cursor:default;
+	background-image:url(../img/base/bg_ahelpinfo_B.png);
+	background-position:0 -147px;
+}
+.regBox3 .btn_agray span{
+	cursor:default;
+	background-position:right -168px;
+}
+.regBox3 .formInput li .loading {
+	display:none;
+	padding-bottom:5px;
+	background:url(../img/base/onload.gif) no-repeat 15px 7px #fff;
+	text-indent:35px;
+	line-height:18px;
+	color:#777!important;
+	overflow:hidden;
+}
+.regBox3 .formInput .mobileCode .Validform_right,
+.regBox3 .formInput .inputMobile .Validform_right {
+	display:none;
+}
+.regBox3 .formInput .mobileCode {
+	display:none;
+}
+
+/*  success page has card*/
+.successBox{
+	width:855px;
+	position:relative;
+	margin:20px auto 30px;
+}
+.successBox .head{
+	height:27px;
+	padding:0;
+	position:static;
+	background:url(../img/base/bg_regsuccess_head.jpg) no-repeat;
+}
+.successBox .boxbody{
+	height:	397px;
+	background:#f5f5f5;
+	border:1px solid #c7c7c7;
+	border-top:0;
+}
+.successBox .boxbody .panel{
+	width:770px;
+	height:310px;
+	background:url(../img/base/bg_regsuccess_body.jpg) no-repeat;
+	position:absolute;
+	left:50%;
+	top:0;
+	margin-left:-385px;
+	text-align:center;
+}
+
+.successBox .boxbody .panel h3{
+	color:#fff;
+	font-size:30px;
+	font-family:"microsoft yahei";
+	font-weight:normal;
+	padding:60px 0 20px 0;
+}
+.successBox .boxbody .panel p{
+	color:#fff;
+	font-size:22px;
+	font-family:"microsoft yahei";
+	padding:0 0 10px 0;
+}
+
+.successBox .boxbody .panel .op{
+	text-align:center;
+	padding-top:10px;	
+}
+.successBox .boxbody .panel .op p{
+	font-size:14px;
+	color:#fff;
+	padding:5px 0;
+	font-family:Verdana, simsun;
+	text-align:center;
+}
+.btn_startShopping{
+	display:block;
+	width:108px;
+	height:35px;
+	margin:0 auto;
+	text-indent:-20000px;
+	background:url(../img/base/btn_startShopping.jpg);
+}
+
+/*  success page has't card*/
+.successBox .boxbody .nocordPanel h3,
+.successBox .boxbody .nocordPanel p{
+	text-align:left;
+	padding-left:84px;
+}
+.successBox .boxbody .nocordPanel h3{
+	padding:40px 0 10px 84px;	
+}
+.successBox .boxbody .nocordPanel .op{
+	padding-top:0;
+}
+.successBox .boxbody .nocordPanel .smallfont{
+	font-size:14px;	
+}
+
+/* login page */
+.loginBox{
+	width:590px;
+	height:459px;
+	position:relative;
+	margin:30px auto;
+}
+.loginBox .bg{
+	background:#000;
+	width:582px;
+	height:451px;
+	position:relative;
+	left:8px;
+	top:8px;
+	margin-bottom:-451px;
+	opacity:.1;
+	filter:alpha(opacity=10);
+	-moz-opacity:.1;
+	-webkit-opacity:.1;
+}
+.loginBox .loginBoxBody{
+	width:582px;
+	height:451px;
+	border:1px solid #3589d1;
+	position:relative;
+	background:#fff;
+	
+}
+.loginBox h3{
+	color:#508825;
+	font-family:"microsoft yahei";
+	font-size:20px;
+	font-weight:normal;
+	height:63px;
+	line-height:62px;
+	border-bottom:2px solid #73b843;
+	padding-left:20px;
+	position:relative;
+	background:url(../img/base/bg_login.png) 0 -222px;
+}
+.loginBox h3 s{
+	display:block;
+	position:absolute;
+	height:2px;
+	width:261px;
+	overflow:hidden;
+	right:0;
+	bottom:-2px;
+	_bottom:-3px;
+	background:#2886ce;
+}
+.loginBox h3 span{
+	font-size:12px;
+	display:block;
+	padding-top:30px;
+	line-height:12px;
+	color:#333;
+	padding-right:13px;
+}
+.loginBox .formInput ul{
+	padding:60px 0 0 84px;
+}
+.loginBox .formInput label{
+	font-size:14px;
+	width:80px;
+	text-align:right;
+}
+.loginBox .formInput .textfs12{
+	font-size:12px;
+	text-align:left;
+}
+.loginBox  li{
+	height:	60px;
+}
+.loginBox .formInput .chkbox{
+	margin-top:8px;
+}
+.loginBox .formInput li input{
+	width:196px;
+	float:left;
+	margin-top:2px;
+}
+.loginBox .username,.loginBox .password{
+	display:block;
+	float:left;
+	height:29px;
+	width:47px;
+	background:url(../img/base/bg_login.png) no-repeat;
+	margin:-6px 0 0 -5px;
+}
+.loginBox .username{
+	background-position:3px 0;	
+}
+.loginBox .password{
+	background-position:3px -47px;	
+}
+.loginBox .forgetpwd{
+	/*padding-left:195px;	*/
+}
+.loginBox .btnPanel .btn_Submit{
+	background:url(../img/base/bg_login.png) 0 -136px;
+	width:168px;
+	height:55px;
+}
+.loginBox .btnPanel{
+	margin: 0 80px;	
+}
+
+.getpwdBox .formInput ul {
+	padding-left:60px;
+}
+.getpwdBox li,
+.resetpwdBox li{
+	height:80px;
+}
+.getpwdBox .formInput label,
+.resetpwdBox .formInput label{
+	width:145px;
+	white-space:nowrap;
+	overflow:visible;
+}
+.resetpwdBox .formInput label {
+	width:100px;
+}
+.getpwdBox .formInput li input,
+.resetpwdBox .formInput li input {
+	margin-left:0;
+	width:240px;
+}
+.getpwdBox .formInput li .inputw100 input{
+	width:93px !important
+}
+.getpwdBox .btnPanel .btn_Submit,
+.resetpwdBox .btnPanel .btn_Submit{
+	background-position: 0 -345px;
+}
+.msgSucc .txt { 
+	padding-left:20px;
+	font-size:13px;
+	font-weight:bold;
+	background:url(../img/base/right.png) 0 5px no-repeat;
+}
+.strengthCtner { 
+	float:none;
+	padding-left:100px;
+	zoom:1;
+}
+.loginBoxBody .Validform_right,
+.getpwdBox .Validform_right,
+.resetpwdBox .Validform_right{
+	display:none;
+}
+
+.verifyBox .msgSucc { 
+	margin-top:50px;
+	text-align:center;
+	font-size:14px;
+}
+.verifyBox .msgSucc .txt{
+	display:inline-block;
+	height:32px;
+	font-size:17px;
+	padding-left:50px;
+	margin-bottom:15px;
+	background:url(../img/base/icon_success.png) 0 0 no-repeat;
+}
+.verifyBox .msgFail .txt {
+	padding-top:2px;
+	height:34px;
+	background:url(../img/base/icon_failed.png) 0 -4px no-repeat;
+}
+.verifyBox .bg,
+.verifyBox .loginBoxBody {
+	height:400px;
+}
+.verifyBox .bg {
+	margin-bottom:-400px;
+}
+.extra {
+	border-top:1px dashed #ccc;
+	margin:50px 20px 0;
+	padding-top:50px;
+}
+.extra p {
+	text-align:center;
+	margin-top:20px;
+}
+.extra p a { 
+	margin:0 10px;
+}
+.memberCardSample {
+	position:absolute;
+	width:400px;
+	margin-left:670px;
+}
+
+.termsOfUseBoxCtner {
+	width:500px;
+	height:386px;
+	border:1px solid #3589D1;
+	background-color:#fff;
+}
+.termsOfUseBoxCtner .centerPopBody {
+	width:500px;
+	height:386px;
+	overflow:hidden;
+	background-color:#fff;
+}
+.termsOfUseBoxCtner .contbody {
+	height:350px;
+	margin:18px 8px 18px 18px;
+	padding-right:10px;
+	overflow:auto;
+}
+.termsOfUseBoxCtner h3 {
+	font-family:"microsoft yahei";
+	font-size:16px;
+	color:#4F8827;
+	margin:10px auto 15px;
+	text-align:center;
+}
+.termsOfUseBoxCtner h4 {
+	margin-bottom:10px;
+}
+.termsOfUseBoxCtner p {
+	margin-bottom:10px;
+}
+
+.sw .regBox1 .formInput ul {
+	padding-left:0;
+}
+.sw .memberCardSample {
+	margin-left:480px;
+	width:380px;
+}
+.sw .issam li {
+	width:294px;
+}
+.sw .regBox2 {
+	margin-top:50px;
+}

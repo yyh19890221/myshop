@@ -1,0 +1,207 @@
+
+.popPlane{
+	position:absolute;
+	left:-15px;
+	top:25px;
+	*top:20px;	
+	width:176px;
+	height:auto;
+	overflow:hidden;
+}
+.popPlane .planeTop,.popPlane .planeTop i,.popPlane .inner,.popPlane .planeBottom{
+	background:url(../../img/base/pro_popAddPlane.png);
+}
+.popPlane .planeTop{
+	background-position:0 -20px;
+	height:20px;
+	position:relative;
+}
+.popPlane .planeTop i{
+	display:block;
+	height:12px;
+	width:20px;
+	position:absolute;
+	left:20px;
+	top:1px;
+}
+.popPlane .inner{
+	background-position:0 -40px;
+	padding-left:4px;	
+}
+.popPlane .inputtext{
+		
+}
+.popPlane .inputtext a {
+	color:#176DBA;
+}
+.popPlane .planeBottom{
+	background-position:left bottom;
+	height:8px;
+}
+.popPlane .op{
+	background:url(../img/base/pro_popAddPlane_op.png) center top no-repeat;
+	width:167px;
+}
+.popPlane .listPlane{
+	width:167px;
+	height:143px;
+	overflow:hidden;
+	overflow-y: auto;	
+}
+.popPlane .listPlane .over,
+.popPlane .listPlane .over label,
+.popPlane .listPlane .over span{
+	background:url(../img/base/prosbg.png)
+}
+.popPlane .listPlane li:hover,
+.popPlane .listPlane .over,
+.popPlane .listPlane .now,
+.popPlane .listPlane li:hover label,
+.popPlane .listPlane li:hover span{
+	background:url(../../img/base/prosbg.png)
+}
+.popPlane .listPlane li{
+	width:167px;	
+	height:35px;
+	cursor:pointer;
+	float:left;
+	display:block;
+	padding-bottom:0;
+}
+.popPlane .listPlane li:hover{
+	background-position:0 -417px;
+}
+.popPlane .listPlane li label{
+	height:35px;
+	width:100px;
+	padding-left:15px;	
+	font-size:14px;
+	font-family:simsun;
+	font-weight:bold;
+	line-height:34px;
+	cursor:pointer;	
+   	float: left;
+	margin:0;
+}
+.popPlane .listPlane li span{
+	display:block;
+	width:50px;
+	height:35px;
+	line-height:34px;
+	font-family:Verdana;
+	font-weight:bold;
+	font-size:12px;	
+	cursor:pointer;
+	float:left;
+}
+.popPlane .listPlane li:hover label{
+	background-position:left -383px;
+	background-repeat:no-repeat;
+	color:#fff;
+	
+}
+.popPlane .listPlane li:hover span{	
+	background-position:right -451px;
+	background-repeat:no-repeat;	
+	color:#fff;
+}
+
+.popPlane .listPlane .now{
+	background-position:0 -417px;
+	color:#fff;
+}
+.popPlane .listPlane .now label{
+	background-position:left -383px;
+	background-repeat:no-repeat;	
+}
+.popPlane .listPlane .now span{	
+	background-position:right -451px;
+	background-repeat:no-repeat;	
+}
+
+.popPlane .listPlane .over{
+	background-position:0 -417px;
+}
+.popPlane .listPlane .over label{
+	background-position:left -383px;
+	background-repeat:no-repeat;	
+}
+.popPlane .listPlane .over span{	
+	background-position:right -451px;
+	background-repeat:no-repeat;	
+}
+.popPlane p{
+	display:block;
+	clear:both;
+	float:none !important;	
+	line-height:40px;
+	height:41px;
+	padding-left:15px;
+}
+.popPlane .btnSave,
+.popPlane .btnSave span,
+.popPlane input,
+.popPlane .btnCancel,
+.popPlane .btnCancel span,
+.popPlane .btnOK,
+.popPlane .btnOK span
+{
+	background:url(../../img/base/oftenPopWin.png) no-repeat;
+}
+.popPlane .btnSave,
+.popPlane .btnCancel,
+.popPlane .btnOK
+{
+	background-position:0 0;
+	display:block;
+	width:91px;
+	height:27px;
+	overflow:hidden;
+}
+.popPlane .btnSave span,
+.popPlane .btnCancel span,
+.popPlane .btnOK span
+{
+	background-position:right -37px;
+	display:block;
+	width:91px;
+	height:27px;
+	line-height:26px;
+	text-align:center;
+	font-family:"microsoft yahei";
+	font-size:14px;
+	color:#052c67;
+	cursor:pointer;
+}
+.popPlane .twoBtn .btnSave,
+.popPlane .twoBtn .btnSave span,
+.popPlane .twoBtn .btnCancel,
+.popPlane .twoBtn .btnCancel span,
+.popPlane .twoBtn .btnOK,
+.popPlane .twoBtn .btnOK span
+{
+	width:60px;
+}
+.popPlane .twoBtn .btnSave,
+.popPlane .twoBtn .btnCancel
+.popPlane .twoBtn .btnOK
+{
+	float:left;
+	margin-right:10px;
+}
+.popPlane .inputp{
+	padding:3px 0 3px 12px;	
+}
+.popPlane input{
+	background-position:0 -74px;
+	border:0;
+	width:139px;
+	height:31px;
+	line-height:30px;
+	padding:0 3px;
+	display:block;
+	margin-top:5px;
+}
+.onlyBtn{
+	padding-top:25px;	
+}

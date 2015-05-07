@@ -1,0 +1,100 @@
+.sidebox {}
+.sidebox h3, 
+.sidebox h4 {
+	position:relative;
+	height:40px;
+	font-size:14px;
+	font-family:microsoft yahei, tahoma, arial;
+	color:#fff;
+	padding-left:15px;
+	line-height:40px;
+	font-weight:normal;
+	background-color:#639b1b;
+}
+.sidebox h3 s, 
+.sidebox h4 s{
+	position:absolute;
+	right:12px;
+	top:16px;
+	width:9px;
+	height:9px;
+	display:inline-block;
+	overflow:hidden;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	background:url(../../img/base/corners.png) 0 -124px no-repeat;
+}
+.sidebox .cont { 
+	overflow:hidden; 
+	zoom:1;
+}
+.sidebox .prolist {
+	margin-top:-1px;
+}
+.sidebox .prolist li {
+	clear:both;
+	height:auto;
+	min-height:80px;
+	_height:80px;
+	zoom:1;
+	float:none;
+	padding:12px 15px 12px 107px;
+	background:#fff;
+	border-top:1px solid #e4e4e4;
+}
+.sidebox .prolist .img {
+	position:absolute;
+	margin-left:-92px;
+	float:none;
+	margin-bottom:0;
+}
+.sidebox .prolist .img img {
+	display:block;
+	width:80px;
+	height:80px;
+	overflow:hidden;
+	margin:0;
+}
+.sidebox .prolist .title {
+	padding-left:0;
+	height:40px;
+	line-height:20px;
+	overflow:hidden;
+	margin-bottom:2px;
+}
+.sidebox .prolist .title a { 
+	color:#666;
+}
+.sidebox .prolist .title a:hover { 
+	color:#00448D;
+}
+.sidebox .prolist .price {
+	padding-left:0;
+	color:#00448d;
+	font-family:Verdana, Arial;
+	font-weight:bold;
+	font-size:14px;
+}
+.sidebox .prolist .volumeSet{
+	padding-top:5px;
+	height:28px;
+}
+.sidebox .prolist .action{
+	padding-top:5px;
+	text-align:left;
+}
+.sidebox .prolist .btn_addCart{
+	padding-left:8px;
+}
+.sidebox .prolist .btn_addCart i{
+	display:none;
+}
+.sidebox206 {
+	_width:204px;
+}
+.sidebox206 .prolist .img img {
+	width:60px;
+	height:60px;
+	border:1px solid #d7d7d7;
+}

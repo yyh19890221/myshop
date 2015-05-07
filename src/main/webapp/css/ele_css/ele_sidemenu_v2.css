@@ -1,0 +1,133 @@
+.sidemenu { 
+	background:#fff;
+	font-family:"Microsoft Yahei",Tahoma,Arial;
+}
+.catelist{
+	zoom:1;/*Don't delect this*/
+}
+.titLevel1{
+	height:40px;
+	background-color:#639b1b;
+	font-size:18px;
+	color:#fff;
+	padding-left:15px;
+	line-height:40px;
+	margin-bottom:1px;
+}
+.titLevel1 h1{
+	font-size:18px;
+	color:#fff;
+	font-weight:normal;
+}
+.cateLevel2{
+	margin-bottom:1px;
+}
+.titLevel2{
+	position:relative;
+	height:40px;
+	font-size:14px;
+	color:#666;
+	line-height:40px;
+	font-weight:normal;
+	zoom:1;
+	background-color:#e4e4e4;
+	cursor:pointer;
+}
+.cateLevel2 h2.hover,
+.titLevel2:hover{
+	background-color:#0065ac;
+}
+.cateLevel2 h2.active,
+.titLevel2:active{
+	background-color:#00448D;
+}
+.titLevel2 a{
+	float:left;
+	display:block;
+	padding-left:15px;
+	color:#666;
+	/*background-color:#e4e4e4;*/
+	zoom:1;
+}
+.titLevel2 a:hover{
+	color:#fff;
+	/*background-color:#ddd;*/
+}
+.cateLevel2 h2.hover a,
+.titLevel2:hover a,
+.cateLevel2 h2.active a,
+.titLevel2:active a{
+	color:#fff;
+}
+.cateLevel2 i{
+	position:absolute;
+	right:12px;
+	top:11px;
+	width:9px;
+	height:9px;
+	display:inline-block;
+	overflow:hidden;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	background:url(../../img/base/corners.png) 0 0 no-repeat;
+}
+.cateLevel2 .titLevel2 i{
+	top:16px;
+}
+.cateLevel2 h2.now i{}
+.cateLevel2_expand .titLevel2 i{
+	background-position: 0 -30px;
+}
+
+.cateLevel2 h2.now{
+	background-color:#00448d;	
+}
+.cateLevel2 h2.now a{
+	color:#fff;
+	background-color:#00448d!important;
+}
+.cateLevel2 h2.now a:hover{
+	color:#fff;
+}
+.cateLevel3{
+	padding-top:3px;
+	overflow:hidden;/*Don't delect this*/
+	margin-bottom:7px;
+	zoom:1;
+	*position:relative;
+}
+.cateLevel3 ul{
+	zoom:1;
+	margin-bottom:-2px;
+}
+.cateLevel3 li{
+	position:relative;
+	padding-left:0;
+	line-height:30px;
+	*vertical-align:top;
+	zoom:1;
+}
+.cateLevel3 li a{
+	display:block;
+	color:#666;
+	height:29px;
+	padding:1px 0 0 15px;
+	overflow:hidden;
+	border-bottom:1px solid #e4e4e4;
+}
+.cateLevel3 li a:hover{
+	color:#00448d;
+}
+.cateLevel3 li a:hover i{
+	background-position:0 -63px;
+}
+.cateLevel3 .now a{
+	color:#00448d !important;
+	border-bottom-color:#00448d;
+	background-color:transparent;
+}
+.cateLevel3 .now i{
+	background-position:0 -63px;
+}
+

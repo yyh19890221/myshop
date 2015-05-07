@@ -1,0 +1,27 @@
+.crumb{
+	height:40px;
+	color:#999;
+	overflow:hidden;
+	background-color:#f4f4f4;
+	font-size:14px;
+	line-height:40px;
+	font-family:"Microsoft Yahei",Tahoma;
+}
+.crumb a,
+.crumbAlter span{
+	color:#999;	
+}
+.crumb a:hover {
+	color:#00448d;
+}
+.crumb .inner{
+	width:1204px;
+	padding-left:16px;
+	margin:0 auto;
+}
+.crumb .inner strong{}
+
+.crumbAlter .inner strong{
+	font-weight:normal;
+	font-family:"Microsoft Yahei",Tahoma;
+}

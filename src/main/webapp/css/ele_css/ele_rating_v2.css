@@ -1,0 +1,54 @@
+/* Rating Readonly */
+a.rate, span.rate { float:none; display: inline-block; height: 18px; width: 60px; line-height:1.5!important; background: url(../../img/base/rate.png) 0 0 repeat-x; vertical-align: middle; clear:both; }
+a.rate .highlight , 
+span.rate .highlight,
+.rankB0,
+.rankB1,
+.rankB2,
+.rankB3,
+.rankB4,
+.rankB5,
+.rankB6,
+.rankB7,
+.rankB8,
+.rankB9, 
+.rankB10{float:left; display: inline-block; height: 18px; background: url(../../img/base/rate.png) 0 -21px repeat-x; vertical-align: middle; line-height: 1.5;  overflow: hidden; }
+.rankB0,
+.rankB1 {
+	width:0;
+}
+.rankB2 {
+	width:12px;
+}
+.rankB3 {
+	width:18px;
+}
+.rankB4 {
+	width:24px;
+}
+.rankB5 {
+	width:30px;
+}
+.rankB6 {
+	width:36px;
+}
+.rankB7 {
+	width:42px;
+}
+.rankB8 {
+	width:48px;
+}
+.rankB9 {
+	width:54px;
+}
+.rankB10 {
+	width:60px;
+}
+.mark { margin-left: 5px;}
+.markHide { display: none;}
+
+/* Rating Do Rating */
+.rating { position: relative; display: inline-block; height: 18px; width: 60px; *zoom: 1; overflow: hidden;}
+.rating .rating-btn { position: relative; display: inline-block; float: left; height: 18px; width: 12px; overflow: hidden; padding: 0; *zoom: 1; z-index: 1;}
+.rating .rating-btn:active {*blur:expression(this.focus=this.blur());}
+.rating .rating-highlight { position: absolute; top: 0; left: 0; display: inline-block; height: 18px; background: url(../../img/base/rate.png) 0 -21px repeat-x; z-index: 0;}

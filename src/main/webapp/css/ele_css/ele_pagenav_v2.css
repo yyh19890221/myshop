@@ -1,0 +1,178 @@
+.pageNav a span,
+.pageNav a.curr span,
+.pageNav a.pre span span,
+.pageNav a.next span span{
+	background: none;
+}
+
+.pageNav{ line-height: 22px; font-family:microsoft yahei;}
+.pageNav span.mr10{ color:#4e4e43;}
+.pageNav span,
+.pageNav a,
+.pageNav ins{float:left;font-size:12px;}
+.pageNav a {
+	display:inline-block;
+	padding:0 10px;
+	margin-left:4px;
+	border:1px solid #dcdcdc;
+	background-color:#fff;
+	vertical-align:middle;
+	border-radius:0;
+	box-shadow: none;
+}
+.pageNav a:hover {
+    color: #236cba;
+	border-color:#236cba;
+    text-decoration: none;
+}
+.pageNav a span {
+    display: inline-block;
+    line-height: 22px;
+	cursor:pointer;
+}
+.pageNav ins {
+    line-height: 22px;
+    margin:0 7px;
+    text-decoration: none;
+	color:#000;
+	vertical-align:middle;
+}
+.pageNav ins .curr {
+	color: #236cba;
+}
+.pageNavBot {
+    border-top: 1px solid #dbdbdb;
+}
+.pageNav a.curr {
+    color: #fff;
+    cursor: default;
+    text-decoration: none;
+	border-color:#0065ac;
+	background-color:#0065ac;
+}
+.pageNav a.curr:hover {
+	color: #fff;
+}
+.pageNav a.curr span {
+	cursor: default;
+}
+.pageNav a.pre span span, .pageNav a.next span span {
+	background-repeat:no-repeat;
+    padding: 0;
+}
+.pageNav a.next,
+.pageNav a.pre{
+	overflow:hidden; 
+	vertical-align:middle; 
+	border:none; 
+	background-color:#0065ac;
+	border:1px solid #0065ac;
+	box-shadow:none;
+	color:#fff;
+}
+.pageNav a.next { margin-left:4px;}
+.pageNav a.pre { margin-right:0;}
+.pageNav a.pre span span {
+	background-position: 4px -85px;
+}
+.pageNav a.next span span {
+    background-position: 4px -55px;
+}
+.pageNav a.pre:hover span span {
+    background-position: 4px -203px;
+}
+.pageNav a.next:hover span span {
+    background-position: 4px -175px;
+}
+.pageNav a.preDisable,
+.pageNav a.nextDisable,
+.pageNav a.preDisable span, 
+.pageNav a.preDisable:hover span, 
+.pageNav a.nextDisable span, 
+.pageNav a.nextDisable:hover span{
+    cursor: default;
+}
+.pageNav a.preDisable,
+.pageNav a.nextDisable{
+	background-color:transparent;
+	border-color:#dcdcdc;
+	color:#dcdcdc;
+}
+
+.pageNav a.preDisable span span,
+.pageNav a.preDisable:hover span span {
+    background-position: 4px -146px;
+	cursor:default;
+}
+.pageNav a.nextDisable span span, 
+.pageNav a.nextDisable:hover span span {
+    background-position: 4px -116px;
+	cursor:default;
+}
+.pageNav span s{display:none;}
+
+
+.filter .pageNav span,
+.filter .pageNav ins,
+.filter .pageNav ins .curr{
+	font-size:14px;
+	color:#4e4e4e;
+}
+.filter .pageNav ins,
+.filter .pageNav .mr10{
+	float:left;
+}
+.filter .pageNav strong{
+	font-weight:normal;	
+}
+.filter .pageNav a.pre,
+.filter .pageNav a.next{
+	float:left;
+	border:none;
+	padding:0;
+	background-color:transparent;
+}
+.filter .pageNav a.pre{
+	margin-right:0;
+}
+.filter .pageNav a.next{
+	margin-left:0;
+}
+.filter .pageNav a.pre span,
+.filter .pageNav a.next span{
+	float:left;
+}
+.filter .pageNav a.pre span span,
+.filter .pageNav a.next span span{
+	float:left;
+	width:10px;
+	height:20px;
+	background:url(../../img/base/sprite_icon.png) no-repeat;
+	
+}
+.filter .pageNav a.pre span span {
+	background-position: 0 -1933px;
+}
+.filter .pageNav a.next span span {
+    background-position: right -1966px;
+}
+.filter .pageNav a.pre:hover span span {
+    background-position: 0 -2002px;
+}
+.filter .pageNav a.next:hover span span {
+    background-position: right -2034px;
+}
+.filter .pageNav a.preDisable span span, 
+.filter .pageNav a.preDisable:hover span span {
+	background-position: 0 -1933px;
+   opacity:.2;
+   filter:alpha(opacity=20);
+}
+.filter .pageNav a.nextDisable span span, 
+.filter .pageNav a.nextDisable:hover span span {
+     background-position: right -1966px;
+	  opacity:.2;
+   filter:alpha(opacity=20);
+}
+
+

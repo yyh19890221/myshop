@@ -1,0 +1,291 @@
+.miniformInput .inputText,
+.miniformInput .inputText span,
+.miniformInput .over .inputText
+{
+	background:url(../../img/base/bg_reg1.png) no-repeat;
+}
+.miniformInput li{
+	height:68px;
+}
+.miniformInput li div,
+.miniformInput li label,
+.miniformInput li span{
+	display:block;
+	float:left;	
+}
+.miniformInput li label{
+	width:70px;
+	padding-top:5px
+}
+.miniformInput li label span{
+	padding-top:0;
+	display:inline;
+	float:none;
+}
+.miniformInput li p{
+	clear:both;
+	float:none;
+	padding-left:68px;
+	color:#979797;
+}
+.miniformInput li input{
+	width:247px;
+	border:0;
+	background:none;
+	padding:0;
+}
+.miniformInput .inputText{
+	width:185px;
+	height:31px;
+	background-position:left -483px;
+	margin-right:10px;
+	padding-left:7px;
+}
+.miniformInput .inputSelect{
+	margin-right:10px;	
+}
+.miniformInput .radioselB input,
+.miniformInput .radiosel input{
+	display: block;
+    float: left;
+    height: 12px;
+    margin: 3px;
+    width: 12px;
+}
+.miniformInput .radioselB label,
+.miniformInput .radiosel label{
+    display: inline-block;
+	text-align:left !important;
+	padding:0 !important;
+    width: 160px;
+	margin-right:100px;
+}
+.miniformInput .radioselB{
+	float:left;
+	width:790px;
+	padding-left:100px;
+	height:30px;
+	padding-top:5px;
+}
+.miniformInput .radioselB label{
+	width:auto !important;	
+}
+.miniformInput span{
+	padding-top:5px;
+	
+}
+.miniformInput .inputText span{
+	width:190px;
+	height:25px;
+	background-position:right -514px;
+	padding:6px 0 0 0;
+	overflow:hidden;
+	zoom:1;
+}
+
+.miniformInput .inputw100,
+.miniformInput .inputw100 span{
+	width:100px !important;	
+}
+.miniformInput .inputw100 input{
+	width:93px !important;	
+}
+.miniformInput .inputw60,
+.miniformInput .inputw60 span{
+	width:60px !important;	
+}
+.miniformInput .inputw60 input{
+	width:54px !important;	
+}
+
+.miniformInput .tips, .miniformInput .Validform_wrong{
+	background:url(../../img/base/sprite_icon.20130327.png) 0 -1303px no-repeat;
+	padding-left:22px;
+	padding-top:0;
+	height:20px;
+	color:#D70200;
+	margin-left:0;	
+	float:none !important;
+	display:inline-block;
+}
+.miniformInput .msg{
+	color:#979797;	
+}
+.miniformInput .chkimg img{
+	display:block;
+	float:left;	
+}
+.miniformInput .chkimg{
+	padding:0;
+	margin-right:0;	
+	margin-left:-5px;
+}
+.miniformInput .pwdPanel{
+	color:#979797;
+}
+.miniformInput .last{
+	height:45px;	
+}
+.miniformInput .chkbox{
+	float:left;
+	width:25px !important;
+	padding:0;
+	height:12px;
+	margin-top:8px;	
+}
+.miniformInput .over .inputText{
+	background-position:left -545px;
+}
+
+.miniformInput .over .inputText span{	
+	background-position:right -576px;
+}
+.miniformInput .over label{
+	font-weight:bold;	
+}
+
+.miniloginBox{
+	width:329px;
+	height:336px;
+	display:block;
+}
+
+.miniloginBox .loginBoxBody{
+	width:327px;
+	height:334px;
+	border:1px solid #3589d1;
+	position:relative;
+	background:#fff;
+}
+.miniloginBox h3{
+	color:#236cb9;
+	font-family:"microsoft yahei";
+	font-size:16px;
+	font-weight:normal;
+	height:63px;
+	line-height:62px;
+	border-bottom:2px solid #73b843;
+	padding-left:26px;
+	position:relative;
+	background:url(../../img/base/bg_login.png) 0 -222px;
+}
+.miniloginBox h3 strong{
+	font-size:24px;	
+	font-weight:normal;
+	padding-left:10px;
+}
+.miniloginBox h3 s{
+	display:block;
+	position:absolute;
+	height:2px;
+	width:261px;
+	overflow:hidden;
+	right:0;
+	bottom:-2px;
+	_bottom:-3px;
+	background:#2886ce;
+}
+.miniloginBox h3 span{
+	font-size:12px;
+	display:block;
+	padding-top:30px;
+	line-height:12px;
+	color:#333;
+	padding-right:13px;
+}
+.miniloginBox .miniformInput ul{
+	padding:15px 0 0 15px;
+}
+.miniloginBox .miniformInput label{
+	font-size:12px;
+	width:80px;
+	text-align:right;
+}
+.miniloginBox .miniformInput .textfs12{
+	font-size:12px;
+	text-align:left;
+}
+.miniloginBox li{
+	height:	44px;
+}
+.miniloginBox .last{
+	height:	20px;
+}
+.miniloginBox .tipsWrap {
+	text-align:center;
+}
+.miniloginBox .miniformInput .chkbox{
+	margin-top:8px;
+}
+.miniloginBox .miniformInput li input{
+	width: 140px;
+	float: left;
+	margin-top: -3px;
+	background: #fff;
+	height: 25px;
+}
+.miniloginBox .username,.miniloginBox .password{
+	display:block;
+	float:left;
+	height:29px;
+	width:47px;
+	background:url(../../img/base/bg_login.png) no-repeat;
+	margin-top:-5px;
+	margin-left:-5px;
+}
+.miniloginBox .username{
+	background-position:3px 0;	
+}
+.miniloginBox .password{
+	background-position:3px -47px;	
+}
+.miniloginBox .forgetpwd{
+	padding-left:20px;	
+}
+.miniloginBox .btnPanel{
+	text-align:left;
+	padding-left:95px;
+	padding-top:10px;
+}
+.miniloginBox .btnPanel .btn_Submit{
+	display:inline-block;
+	zoom:1;	
+	text-indent:-20000px;
+	cursor:pointer;
+	background:url(../../img/base/bg_login.png) 0 -93px;
+	width:98px;
+	height:43px;
+	vertical-align:middle;
+}
+.miniloginBox p{
+	height:22px;
+	line-height:22px;	
+}
+.miniloginBox p a{
+	text-decoration:underline;
+	padding-right:10px;
+	color:#4f8827;	
+}
+.miniloginBox h4{
+	font-size:14px;
+	font-weight:normal;
+	margin:0 10px;
+	border-bottom:1px dashed #cac9b7;
+	height:30px;
+	line-height:30px;
+	padding-left:15px;
+	color:#236cb9;
+}
+.miniloginBox .close {	
+	right:-15px;	
+}
+
+.miniloginBoxCtner { 
+	width: 329px; 
+	height:336px;
+}
+.miniloginBoxCtner .centerPopBody {
+	width: 329px; 
+	height:336px;
+	background:#fff;
+}

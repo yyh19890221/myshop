@@ -1,0 +1,153 @@
+/* CSS Document */
+/**
+	Common Popup Window & Mask Overlay Style
+*/
+#overlay,
+#overlay_transparent { display:none; position:fixed; _position:absolute;_width:0;_height:0;top:0;left:0;right:0;bottom:0;background-color:#78797b; z-index:999;overflow:hidden;  _top:expression(documentElement.scrollTop);_left:expression(documentElement.scrollLeft);}
+#overlay_transparent { background:transparent url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);}
+.popWin { display:none; position:absolute; background-color:#fff; z-index:1000; }
+.popWin .close{position:absolute; right:-20px; top:-18px; width:36px; height:37px; overflow:hidden; display:block; text-indent:-20000px; background:url(../../img/base/btn_close.png);}
+.popWin .close:hover {-moz-opacity:.9; opacity:.9;}
+.popWin_wrap {padding: 20px;}
+
+/** 
+	Demo Style, just to do whatever as you like
+ */
+#popWin_demo p{
+	/* ...... */
+}
+#popWin_demo span{
+	/* ...... */
+}
+
+/* Center Pop Window A */
+.centerPopA {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #FFF;
+	border: 3px solid #236CB9;
+	width: 500px;
+	z-index: 1000;
+}
+.centerPopA .centerPopT {
+	background: #D0E7FF;
+	height: 25px;
+	border-bottom: 1px solid #EEE;
+}
+.centerPopA .centerPopT h6 {
+	font-size: 12px;
+	font-weight: bold;
+	padding: 5px;
+	margin:0;
+	float: left;
+	color: #484848;
+}
+.centerPopA .centerPopT .close {
+	display:block;
+	position:static;
+	background:#236CB9;
+	height:14px;
+	text-indent:0;
+	font-family:SimSun;
+	color:#fff;
+	text-align:center;
+	line-height:1;
+	overflow: hidden;
+	float: right;
+	margin: 5px 5px 0 0;
+	padding:3px 3px 0;
+}
+.centerPopA .centerPopT .shuter:hover {
+	background-position: 0 -690px;
+}
+.centerPopA .centerPopBody {
+	padding: 10px;
+}
+
+/* centerPopB */
+.centerPopB {
+	display: none;
+	position:absolute;
+	top:-100%;
+	left:50%;
+	z-index:1000;
+	background:none;
+}
+.centerPopB .centerPopBody {
+	position:relative;
+}
+.centerPopB .bg{
+	background:#000;
+	_width:expression(this.parentNode.offsetWidth);
+	_height:expression(this.parentNode.offsetHeight);
+	position:absolute;
+	left:8px;
+	top:8px;
+	right:-8px;
+	bottom:-8px;
+	opacity:.1;
+	filter:alpha(opacity=10);
+	-moz-opacity:.1;
+	-webkit-opacity:.1;
+}
+.centerPopBody iframe { 
+	border:none;
+}
+
+/* cartAddedBoxCtner */
+.cartAddedBoxCtner {
+         width:440px;
+         height:185px;
+         border:1px solid #3589D1;
+         background-color:#fff;     
+}
+.cartAddedBoxCtner .centerPopBody {
+         width:440px;
+         height:185px;
+         background-color:#fff;
+}
+.cartAddedBoxCtner .btn_checkout{
+         display:inline-block;
+         width:111px;
+         padding-top:44px;
+         height:0;
+         overflow:hidden;
+         vertical-align:middle;
+         text-indent:0;
+         zoom:0;
+         background:url(../../img/base/btn_checkout.png) 0 0 no-repeat;
+}
+.cartAddedBoxCtner .btn_gray,
+.cartAddedBoxCtner .btn_gray span {
+    background: url("../../img/base/btn_comment.gif") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 35px;
+    line-height: 34px;
+}
+.cartAddedBoxCtner .btn_gray {
+    font-family: "microsoft yahei";
+    font-size: 14px;
+    padding-left: 15px;
+         vertical-align:middle;
+}
+.cartAddedBoxCtner .btn_gray span {
+    cursor: pointer;
+    float: left;
+    padding-right: 15px;
+}
+.cartAddedBoxCtner .btn_gray, 
+.cartAddedBoxCtner .btn_gray:hover {
+    background-position: left -36px;
+    color: #1361BB;
+         text-decoration:none!important;
+}
+.cartAddedBoxCtner .btn_gray span {
+    background-position: right -36px;
+}
+.addCartSucc {
+         zoom:0;
+         padding:50px 20px 0 105px;
+         background:url("../../img/base/bg_account_icon.gif") 45px 37px no-repeat;
+}
