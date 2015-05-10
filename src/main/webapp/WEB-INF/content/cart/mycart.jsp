@@ -78,6 +78,27 @@
 								<a id="clearCart" href="${ctx}/cart/cart!clear.action"  onclick="clearCart()" class="btn_clear"><span>清空购物车</span></a>
 								<a href="${ctx}" class="btn_continue">继续购物</a>
 							</div>
+							
+							
+							<!-- 物流信息-->
+							<div class="clear"></div>
+							<div class="totalprice mt15">
+								<div class="inner cls">
+        							<div class="inner totalinfo">
+										<h2>我的收货地址(修改地址请前往个人信息修改)</h2>
+										<div class="feeCtner cls">
+										<ul class="rightCol">
+											<li class=""><span class="tit">收货人：</span><span class="cash ">${userName}</span></li>
+											<li class=""><span class="tit">收货地址：</span><span class="cash ">${address}</span></li>
+											<li class=" "><span class="tit">联系电话：</span><span class="cash ">${tel}</span></li>
+										</ul>
+									</div>
+									
+								</div>
+						    </div>
+						</div>
+							
+							
 
 							<!-- 合计结账 -->
 							<div class="clear"></div>

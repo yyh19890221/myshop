@@ -43,7 +43,7 @@
                                 <dt><a href="###" class="item">快购工具</a></dt>
                                 <dd>
                                     <ol>
-                                        <li><a href="${ctx}/admin/user!list.action">后台</a></li>
+                                        <li><a  id="admin" href="${ctx}/admin/user!list.action">后台</a></li>
                                         <li><a href="#">常购清单</a></li>
                                     </ol>
                                 </dd>
@@ -86,8 +86,8 @@
 	      contentType: "text/html; charset=utf-8",
 	      dataType: "text",
 	      success:function(data){
-	    	  var logininfo = '<strong class="welmsg">MyShop欢迎您！</strong><span><a href="/myshop/login.action">登录</a><b>|</b><a href="/myshop/account/user!input.action">注册</a></span>';
-	    	  var logoutinfo = '<strong class="welmsg">MyShop欢迎您！</strong><span>'+data+'<b>|</b><a href="/myshop/j_spring_security_logout">退出</a></span>';
+	    	  var logininfo = '<strong class="welmsg">MyShop欢迎您！</strong><span id="logininfo"><a href="/myshop/login.action">登录</a><b>|</b><a href="/myshop/account/user!input.action">注册</a></span>';
+	    	  var logoutinfo = '<strong class="welmsg">MyShop欢迎您！</strong><span id="logininfo">'+data+'</span><b>|</b><span><a href="/myshop/j_spring_security_logout">退出</a></span>';
 	    	 if(data == ''){
 	    		 $('.welcome').html(logininfo);
 	    	 }else{
@@ -108,6 +108,16 @@
    
     $(document).ready(function() {
     	$("#WMheaderCartCount").text($("#minicartTotalQty").val());
+    	
+    	$("#admin").on("click",function(){
+    		var user = $("#logininfo").text();
+    		if(user != "admin"){
+    			alert("对不起，只有管理员拥有后台管理权限！");
+    			return false;
+    		};
+    	});
+    	
+    	
     });
 </script>
 

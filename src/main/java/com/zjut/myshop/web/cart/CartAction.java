@@ -7,6 +7,7 @@ import java.util.HashMap;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.apache.commons.lang.StringUtils;
 import org.apache.struts2.convention.annotation.Namespace;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springside.modules.security.springsecurity.SpringSecurityUtils;
@@ -36,8 +37,18 @@ public class CartAction extends CrudActionSupport<Cart> {
 	private Float cartOffCast;    //会员优惠
 	private Float cartMemberCast; //会员价
 	
+	private String userName;
+	private String address;
+	private String tel;
+	
 	
 	public String mycart(){
+		
+		User user = accountManager.findUserByLoginName(SpringSecurityUtils.getCurrentUser().getUsername());
+		userName = user.getName();
+		address = user.getAddress();
+		tel = user.getTel();
+		
 		return "mycart";
 	}
 	
@@ -191,6 +202,19 @@ public class CartAction extends CrudActionSupport<Cart> {
 		// TODO Auto-generated method stub
 		
 	}
-   
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+
+	public String getTel() {
+		return tel;
+	}
+
 	
 }
