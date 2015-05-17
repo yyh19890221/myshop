@@ -84,7 +84,7 @@
 <!-- 										<a href="#commentSection" class="rank">[25条评论]</a> </p> -->
 								</li>
 								<!-- 促销活动区 -->
-								<li class="saleArea cls"></li>
+								<li class="saleArea cls">库存：${leftcount}件</li>
 								<li class="cls">
 <!-- 					  				<label>支付方式：</label> -->
 <!-- 				                  	<p class="mr15"><span class="paytypeItem"><i class="icon_alipay"></i>支付宝</span></p> -->

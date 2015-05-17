@@ -67,6 +67,11 @@ public class UserAction extends CrudActionSupport<User> {
 		}
 	}
 	
+	
+	public void prepareScored() throws Exception {
+		prepareModel();
+	}
+	
 	@Override
 	protected void prepareModel(Boolean isEdit) throws Exception {
 		if(SpringSecurityUtils.getCurrentUser()!=null){
@@ -77,6 +82,12 @@ public class UserAction extends CrudActionSupport<User> {
 	//-- CRUD Action 函数 --//
 	@Override
 	public String list() throws Exception {
+		
+		if(SpringSecurityUtils.getCurrentUser()==null || !SpringSecurityUtils.getCurrentUser().getUsername().equals("admin")){
+			return "login";
+		}
+		
+		
 		List<PropertyFilter> filters = PropertyFilter.buildFromHttpRequest(Struts2Utils.getRequest());
 		//设置默认排序方式
 		if (!page.isOrderBySetted()) {
@@ -86,6 +97,19 @@ public class UserAction extends CrudActionSupport<User> {
 		page = accountManager.searchUser(page, filters);
 		return SUCCESS;
 	}
+	
+	public String score() throws Exception {
+		List<PropertyFilter> filters = PropertyFilter.buildFromHttpRequest(Struts2Utils.getRequest());
+		//设置默认排序方式
+		if (!page.isOrderBySetted()) {
+			page.setOrderBy("id");
+			page.setOrder(Page.ASC);
+		}
+		page = accountManager.searchUser(page, filters);
+		return "score";
+	}
+	
+	
 
 	@Override
 	public String input() throws Exception {
@@ -107,8 +131,16 @@ public class UserAction extends CrudActionSupport<User> {
 
 		accountManager.saveUser(entity);
 		addActionMessage("保存用户成功");
-		return RELOAD;
+		return INPUT;
 	}
+	
+	public String scored() throws Exception {
+		
+		accountManager.saveUser(entity);
+		addActionMessage("修改积分成功成功");
+		return "edit";
+	}
+	
 
 	@Override
 	public String delete() throws Exception {

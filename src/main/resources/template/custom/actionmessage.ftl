@@ -25,5 +25,5 @@
 <#else>
  $('#actionMessage')<#rt/>
 </#if>
-.hide();return false;">hide</a>]</div><#rt/>
+.hide();return false;">隐藏</a>]</div><#rt/>
 </#if>

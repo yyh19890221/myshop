@@ -107,7 +107,7 @@
                             </div>
                             <!-- /input-group -->
                         </li>
-                        <li>
+                         <li>
                             <a href="user!list.action"><i class="fa fa-dashboard fa-fw"></i> 用户管理</a>
                         </li>
                         <li>
@@ -115,7 +115,8 @@
                         </li>
                         <li>
                             <a href="user!score.action"><i class="fa fa-wrench fa-fw"></i>会员积分管理</a>
-						</li>                       
+						</li>  
+                        
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
@@ -128,8 +129,9 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">用户管理</h1>
+                        <h1 class="page-header">库存管理</h1>
                     </div>
+                    
                     <!-- /.col-lg-12 -->
                 </div>
                     <!-- /.row -->
@@ -137,7 +139,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            	所有用户
+                            	所有商品
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -145,37 +147,40 @@
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th>登录名</th>
-                                            <th>姓名</th>
-                                            <th>邮箱</th>
-                                            <th>角色</th>
+                                            <th>ID</th>
+                                            <th>商品名称</th>
+                                            <th>销售数量</th>
+                                            <th>库存数量</th>
                                             <th>操作</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                     <s:iterator value="page.result">
 										<tr class="odd gradeX">
-											<td>${loginName}&nbsp;</td>
+											<td>${id}&nbsp;</td>
 											<td>${name}&nbsp;</td>
-											<td>${email}&nbsp;</td>
-											<td>${roleNames}&nbsp;</td>
+											<td>${sellcount}&nbsp;</td>
+											<td>${leftcount}&nbsp;</td>
 											<td>&nbsp;
-													<a href="user!input.action?id=${id}">修改</a>&nbsp;
-													<a href="user!delete.action?id=${id}">删除</a>
+													<a href="product!edit.action?id=${id}">修改</a>&nbsp;
+													<a href="product!delete.action?id=${id}">删除</a>&nbsp;
 											</td>
 										</tr>
 									</s:iterator>
                                         
                                     </tbody>
                                 </table>
-                                     <form id="mainForm" action="user.action" method="get">
+                                
+                                
+                                
+	                            <form id="mainForm" action="product.action" method="get">
 								<input type="hidden" name="page.pageNo" id="pageNo" value="${page.pageNo}"/>
 								<input type="hidden" name="page.orderBy" id="orderBy" value="${page.orderBy}"/>
 								<input type="hidden" name="page.order" id="order" value="${page.order}"/>
 		                        <div class="cls">
 		                            <div class="pageNav mb20 fr">
 		                            
-		                                <span class="mr10">共 <strong class="blue">${page.totalCount}</strong> 个用户</span>
+		                                <span class="mr10">共 <strong class="blue">${page.totalCount}</strong> 件商品</span>
 		                                
 					                      <a href="javascript:jumpPage(1)">首页</a>
 					
@@ -228,6 +233,13 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="dist/js/sb-admin-2.js"></script>
+
+    <script>
+    function jumpPage(pageNo){
+		$("#pageNo").val(pageNo);
+		$("#mainForm").submit();
+	}
+    </script>
 
 </body>
 

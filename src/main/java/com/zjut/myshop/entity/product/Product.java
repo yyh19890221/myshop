@@ -20,6 +20,8 @@ public class Product extends IdEntity {
 	private String picture;
 	private String catalogId;
 	private String sellcount;
+	private String leftcount;
+	
 	
 	public String getName() {
 		return name;
@@ -69,6 +71,13 @@ public class Product extends IdEntity {
 	public void setSellcount(String sellcount) {
 		this.sellcount = sellcount;
 	}
+	public String getLeftcount() {
+		return leftcount;
+	}
+	public void setLeftcount(String leftcount) {
+		this.leftcount = leftcount;
+	}
+	
 	
 	
 }

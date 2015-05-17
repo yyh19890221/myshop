@@ -1,4 +1,4 @@
-package com.zjut.myshop.web.product;
+package com.zjut.myshop.web.admin;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,10 +12,12 @@ import org.springside.modules.orm.PropertyFilter;
 import org.springside.modules.utils.web.struts2.Struts2Utils;
 
 import com.zjut.myshop.entity.product.Product;
+import com.zjut.myshop.service.ServiceException;
 import com.zjut.myshop.service.product.ProductService;
 import com.zjut.myshop.web.CrudActionSupport;
 
-@Namespace("/product")
+
+@Namespace("/admin")
 public class ProductAction extends CrudActionSupport<Product> {
 	
 	@Autowired
@@ -57,17 +59,31 @@ public class ProductAction extends CrudActionSupport<Product> {
 	public String input() throws Exception {
 		return "detail";
 	}
+	
+	
+	public String edit() throws Exception {
+		return "input";
+	}
 
 	@Override
 	public String save() throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		
+		productService.saveProduct(entity);
+		addActionMessage("保存产品成功");
+		
+		return "input";
 	}
 
 	@Override
 	public String delete() throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		try {
+			productService.deleteProduct(id);
+			addActionMessage("删除产品成功");
+		} catch (ServiceException e) {
+			logger.error(e.getMessage(), e);
+			addActionMessage("删除产品成功");
+		}
+		return "input";
 	}
 
 	@Override
@@ -113,6 +129,11 @@ public class ProductAction extends CrudActionSupport<Product> {
 
 	@Override
 	protected void prepareModel(Boolean isEdit) throws Exception {
+		if (id != null) {
+			entity = productService.getProductById(id);
+		} else {
+			entity = new Product();
+		}
 		
 	}
 

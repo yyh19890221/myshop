@@ -114,7 +114,7 @@
                             <a href="product!list.action"><i class="fa fa-table fa-fw"></i>库存管理</a>
                         </li>
                         <li>
-                            <a href="user!score.action"><i class="fa fa-wrench fa-fw"></i>会员积分管理</a>
+                            <a href="user!list.action"><i class="fa fa-wrench fa-fw"></i>会员积分管理</a>
 						</li>                       
                     </ul>
                 </div>
@@ -168,38 +168,6 @@
                                         
                                     </tbody>
                                 </table>
-                                     <form id="mainForm" action="user.action" method="get">
-								<input type="hidden" name="page.pageNo" id="pageNo" value="${page.pageNo}"/>
-								<input type="hidden" name="page.orderBy" id="orderBy" value="${page.orderBy}"/>
-								<input type="hidden" name="page.order" id="order" value="${page.order}"/>
-		                        <div class="cls">
-		                            <div class="pageNav mb20 fr">
-		                            
-		                                <span class="mr10">共 <strong class="blue">${page.totalCount}</strong> 个用户</span>
-		                                
-					                      <a href="javascript:jumpPage(1)">首页</a>
-					
-					                    <s:if test="page.hasPre">
-					                         <a class="pre" href="javascript:jumpPage(${page.prePage})">
-		                                       <span><span>上一页</span></span></a>
-					                    </s:if>
-					                    <s:else>
-										    <a class="pre preDisable" href="javascript:jumpPage(${page.prePage})">
-		                                    <span><span>上一页</span></span></a>
-										</s:else>
-										
-										<s:if test="page.hasNext">
-					                        <a class="next"href="javascript:jumpPage(${page.nextPage})"><span><span>下一页</span></span></a>
-					                    </s:if>
-					                    <s:else>
-										  <a class="next nextDisable"href="javascript:jumpPage(${page.nextPage})"><span><span>下一页</span></span></a>
-										</s:else>
-		                                
-		                                <a href="javascript:jumpPage(${page.totalPages})">末页</a>
-		                                
-		                            </div>
-		                        </div>
-		                      </form>
                             </div>
                             
                         </div>

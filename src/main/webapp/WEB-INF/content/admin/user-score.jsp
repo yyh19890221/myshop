@@ -147,8 +147,7 @@
                                         <tr>
                                             <th>登录名</th>
                                             <th>姓名</th>
-                                            <th>邮箱</th>
-                                            <th>角色</th>
+                                            <th>积分</th>
                                             <th>操作</th>
                                         </tr>
                                     </thead>
@@ -157,18 +156,16 @@
 										<tr class="odd gradeX">
 											<td>${loginName}&nbsp;</td>
 											<td>${name}&nbsp;</td>
-											<td>${email}&nbsp;</td>
-											<td>${roleNames}&nbsp;</td>
+											<td>${score}&nbsp;</td>
 											<td>&nbsp;
-													<a href="user!input.action?id=${id}">修改</a>&nbsp;
-													<a href="user!delete.action?id=${id}">删除</a>
-											</td>
+													<a href="user!edit.action?id=${id}">积分修改</a>&nbsp;
 										</tr>
 									</s:iterator>
                                         
                                     </tbody>
                                 </table>
-                                     <form id="mainForm" action="user.action" method="get">
+                                
+                                <form id="mainForm" action="score.action" method="get">
 								<input type="hidden" name="page.pageNo" id="pageNo" value="${page.pageNo}"/>
 								<input type="hidden" name="page.orderBy" id="orderBy" value="${page.orderBy}"/>
 								<input type="hidden" name="page.order" id="order" value="${page.order}"/>

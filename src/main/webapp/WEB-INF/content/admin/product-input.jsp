@@ -14,6 +14,7 @@
 
     <title>购物网站后台管理</title>
 
+    <link href="${ctx}/css/style.css" type="text/css" rel="stylesheet"/>
     <!-- Bootstrap Core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -107,7 +108,7 @@
                             </div>
                             <!-- /input-group -->
                         </li>
-                        <li>
+                         <li>
                             <a href="user!list.action"><i class="fa fa-dashboard fa-fw"></i> 用户管理</a>
                         </li>
                         <li>
@@ -115,7 +116,8 @@
                         </li>
                         <li>
                             <a href="user!score.action"><i class="fa fa-wrench fa-fw"></i>会员积分管理</a>
-						</li>                       
+						</li>  
+                        
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
@@ -128,80 +130,45 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">用户管理</h1>
+                        <h1 class="page-header">库存管理</h1>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
                     <!-- /.row -->
             <div class="row">
-                <div class="col-lg-12">
+              <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            	所有用户
+                            	库存数量修改
                         </div>
-                        <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <div class="dataTable_wrapper">
-                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
-                                    <thead>
-                                        <tr>
-                                            <th>登录名</th>
-                                            <th>姓名</th>
-                                            <th>邮箱</th>
-                                            <th>角色</th>
-                                            <th>操作</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    <s:iterator value="page.result">
-										<tr class="odd gradeX">
-											<td>${loginName}&nbsp;</td>
-											<td>${name}&nbsp;</td>
-											<td>${email}&nbsp;</td>
-											<td>${roleNames}&nbsp;</td>
-											<td>&nbsp;
-													<a href="user!input.action?id=${id}">修改</a>&nbsp;
-													<a href="user!delete.action?id=${id}">删除</a>
-											</td>
-										</tr>
-									</s:iterator>
-                                        
-                                    </tbody>
-                                </table>
-                                     <form id="mainForm" action="user.action" method="get">
-								<input type="hidden" name="page.pageNo" id="pageNo" value="${page.pageNo}"/>
-								<input type="hidden" name="page.orderBy" id="orderBy" value="${page.orderBy}"/>
-								<input type="hidden" name="page.order" id="order" value="${page.order}"/>
-		                        <div class="cls">
-		                            <div class="pageNav mb20 fr">
-		                            
-		                                <span class="mr10">共 <strong class="blue">${page.totalCount}</strong> 个用户</span>
-		                                
-					                      <a href="javascript:jumpPage(1)">首页</a>
-					
-					                    <s:if test="page.hasPre">
-					                         <a class="pre" href="javascript:jumpPage(${page.prePage})">
-		                                       <span><span>上一页</span></span></a>
-					                    </s:if>
-					                    <s:else>
-										    <a class="pre preDisable" href="javascript:jumpPage(${page.prePage})">
-		                                    <span><span>上一页</span></span></a>
-										</s:else>
-										
-										<s:if test="page.hasNext">
-					                        <a class="next"href="javascript:jumpPage(${page.nextPage})"><span><span>下一页</span></span></a>
-					                    </s:if>
-					                    <s:else>
-										  <a class="next nextDisable"href="javascript:jumpPage(${page.nextPage})"><span><span>下一页</span></span></a>
-										</s:else>
-		                                
-		                                <a href="javascript:jumpPage(${page.totalPages})">末页</a>
-		                                
-		                            </div>
-		                        </div>
-		                      </form>
-                            </div>
-                            
+                            <div class="row">
+			                <div class="col-lg-6">
+			                       <div id="message"><s:actionmessage theme="custom" cssClass="success"/></div>
+			                       <form role="form" action="product!save.action" >
+			                           <input type="hidden" name="id" value="${id}"/>
+			                          
+			                           <div class="form-group">
+			                               <label>产品名称：</label>
+			                               <input class="form-control" type="text"  name="name" maxlength="50" id="name" value="${name}"/>
+			                           </div>
+			                           <div class="form-group">
+			                               <label>销售数量：</label>
+			                               <input class="form-control" class="name" id="sellcount" name="sellcount" type="text" value="${sellcount}">
+			                           </div>
+			                            <div class="form-group">
+			                               <label>库存数量：</label>
+			                                <input class="form-control"  type="text" id="leftcount" maxlength="20" name="leftcount" value="${leftcount}">
+			                           </div>
+			                           
+			                         
+			                           <button type="submit" class="btn btn-default">提交</button>
+			                           <button type="reset" class="btn btn-default">重置</button>
+			                       </form>
+			                   </div>
+                   
+                        </div>
+                            <!-- /.row (nested) -->
                         </div>
                         <!-- /.panel-body -->
                     </div>
